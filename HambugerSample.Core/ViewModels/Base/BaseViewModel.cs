@@ -7,7 +7,7 @@ namespace HambugerSample.Core.ViewModels.Base
 {
     public class BaseViewModel : MvxViewModel
     {
-        protected BaseViewModel()
+        public BaseViewModel()
         {
         }
     }

@@ -7,3 +7,7 @@
 /HambugerSample.iOS/obj/iPhone/Debug
 /packages
 /.vs/HambugerSample/v15/Server/sqlite3
+/.vs/HambugerSample/v15/.suo
+/HambugerSample.Core/bin/Debug/netstandard2.0
+/HambugerSample.iOS/bin/iPhoneSimulator/Debug
+/HambugerSample.iOS/obj/iPhoneSimulator/Debug

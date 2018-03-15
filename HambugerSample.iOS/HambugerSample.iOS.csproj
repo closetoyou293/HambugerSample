@@ -63,10 +63,20 @@
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="MvxPanelPopToRootPresentationHint.cs" />
+    <Compile Include="Services\TouchDialogService.cs" />
     <Compile Include="Setup.cs" />
-    <Compile Include="Views\MainView.cs" />
-    <Compile Include="Views\MainView.designer.cs" />
+    <Compile Include="Views\Base\BaseViewController.cs" />
+    <Compile Include="Views\Base\MainView.cs" />
+    <Compile Include="Views\Help\HelpView.cs" />
+    <Compile Include="Views\Home\HomeView.cs" />
+    <Compile Include="Views\Home\InfoView.cs" />
+    <Compile Include="Views\Home\ThirdView.cs" />
+    <Compile Include="Views\Login\LoginView.cs" />
+    <Compile Include="Views\Menu\MenuView.cs" />
+    <Compile Include="Views\Settings\SettingsView.cs" />
     <Content Include="AppDelegate.cs.txt" />
+    <BundleResource Include="Resources\threelines.png" />
     <Content Include="ToDo-MvvmCross\_ iOS UI.txt" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
@@ -74,7 +84,6 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <Content Include="Entitlements.plist" />
     <None Include="packages.config" />
-    <InterfaceDefinition Include="Views\MainView.xib" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.FluentLayouts.Touch, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">

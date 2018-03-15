@@ -1,4 +1,7 @@
 ﻿using Foundation;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.iOS.Platform;
+using MvvmCross.Platform;
 using UIKit;
 
 namespace HambugerSample.iOS
@@ -6,7 +9,7 @@ namespace HambugerSample.iOS
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
     [Register("AppDelegate")]
-    public class AppDelegate : UIApplicationDelegate
+    public class AppDelegate : MvxApplicationDelegate
     {
         // class-level declarations
 
@@ -21,9 +24,13 @@ namespace HambugerSample.iOS
             // create a new window instance based on the screen size
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            // If you have defined a root view controller, set it here:
-            // Window.RootViewController = myViewController;
+            var setup = new Setup(this, Window);
+            setup.Initialize();
 
+            var startup = Mvx.Resolve<IMvxAppStart>();
+            startup.Start();
+
+            
             // make the window visible
             Window.MakeKeyAndVisible();
 

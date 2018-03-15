@@ -21,12 +21,18 @@ namespace HambugerSample.Core.ViewModels.Home
             }
         }
 
-        private MvxPresentationHint popToRootHint = Mvx.Resolve<MvxPresentationHint>();
+        private MvxPresentationHint popToRootHint;// = Mvx.Resolve<MvxPresentationHint>();
+
+        public ThirdViewModel()
+        {
+            popToRootHint = Mvx.Resolve<MvxPresentationHint>();
+        }
 
         private void DoSaveAndClose()
         {
             //do whatever work one would do to 'save', and send a message to pop to root               
-            ChangePresentation(popToRootHint);
+            Close(this);
+            //ChangePresentation(popToRootHint);
         }
     }
 }
