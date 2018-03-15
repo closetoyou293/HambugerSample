@@ -3,3 +3,7 @@
 ################################################################################
 
 /HambugerSample.Core/obj
+/HambugerSample.Droid/obj/Debug
+/HambugerSample.iOS/obj/iPhone/Debug
+/packages
+/.vs/HambugerSample/v15/Server/sqlite3
